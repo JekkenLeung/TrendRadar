@@ -35,9 +35,9 @@ on:
     #   "15 * * * *"     → 每小时第15分钟 / minute 15 every hour
     #   "30 0-14 * * *"  → 北京时间 8:00-22:00 每小时第30分钟 / Beijing 8am-10pm
     #
-    - cron: "*/10 0-15 * * *"
+    - cron: "*/10 * * * *"
 
-  # workflow_dispatch:
+  workflow_dispatch:
 
 concurrency:
   group: crawler-${{ github.ref_name }}
